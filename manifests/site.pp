@@ -29,6 +29,10 @@ node 'gitlab','gitlab.localdomain' {
   include role::gitlab
 }
 
+node 'mirror' {
+  include role::mirror
+}
+
 node default {
   # This is where you can declare classes for all nodes.
   # Example:

@@ -1,8 +1,9 @@
 class profile::debian {
-#  include apt
+  include apt
 
-#  apt::source { 'stretch':
-#    location => 'http://ftp.us.debian.org/debian/',
-#    repos    => 'main contrib',
-#  }
+  apt::source { 'stretch':
+    location => 'http://mirror/debian/',
+    repos    => 'main contrib',
+  }
+
 }

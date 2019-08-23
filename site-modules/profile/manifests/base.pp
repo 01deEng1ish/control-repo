@@ -4,4 +4,8 @@ class profile::base {
     include profile::debian
   }
 
+  if $facts['os']['name'] == 'CentOS' {
+    include profile::centos
+  }
+
 }

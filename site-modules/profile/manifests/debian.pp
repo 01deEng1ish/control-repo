@@ -6,4 +6,8 @@ class profile::debian {
     repos    => 'main contrib',
   }
 
+  package { ['aptitude','vim']:
+    ensure  => installed,
+  }
+
 }

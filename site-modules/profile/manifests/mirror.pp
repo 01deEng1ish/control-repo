@@ -1,5 +1,6 @@
 class profile::mirror {
-  include apache
+  require apache
+  require profile::firewall::allow_http
 
   package { 'apt-mirror':
     ensure => 'latest',

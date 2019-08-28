@@ -1,5 +1,7 @@
 class profile::puppet::master {
-  firewall { '100 allow puppet master':
+  require profile::firewall::allow_http
+
+  firewall { '900 allow puppet master':
     dport  => 8140,
     proto  => tcp,
     action => accept,

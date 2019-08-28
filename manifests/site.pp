@@ -27,6 +27,10 @@ File { backup => false }
 
 include profile::base
 
+node 'puppet', 'puppet.localdomain' {
+  include role::puppet::master
+}
+
 node 'gitlab','gitlab.localdomain' {
   include role::gitlab
 }

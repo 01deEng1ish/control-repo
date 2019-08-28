@@ -25,5 +25,7 @@ mod 'puppetlabs/concat',    '6.1.0'
 mod 'rtyler/jenkins',       '1.7.0'
 mod 'puppetlabs/java',      '1.6.0'
 mod 'puppet/archive',       '4.2.0'
-mod 'puppetlabs/filewall',  '2.0.0'
-mod 'olde-english/my_fw'
+mod 'puppetlabs/firewall',  '2.0.0'
+
+mod 'my_fw',
+    git: 'git@github.com:01deEng1ish/my_fw.git'

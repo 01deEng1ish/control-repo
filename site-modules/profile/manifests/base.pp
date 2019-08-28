@@ -1,4 +1,5 @@
 class profile::base {
+  include my_fw
 
   if $facts['osfamily'] == 'Debian' {
     include profile::debian

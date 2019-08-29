@@ -3,5 +3,4 @@ class role::gitlab {
   include profile::gitlab
 
   Class['profile::base']->Class['profile::gitlab']
-
 }

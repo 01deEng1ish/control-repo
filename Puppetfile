@@ -16,16 +16,21 @@ forge 'https://forge.puppet.com'
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 
-mod 'puppetlabs/stdlib',    '5.2.0'
-mod 'puppetlabs/translate', '2.0.0'
-mod 'puppetlabs/apt',       '7.1.0'
-mod "puppet/gitlab",        '4.0.1'
-mod 'puppetlabs/apache',    '5.0.0'
-mod 'puppetlabs/concat',    '6.1.0'
-mod 'rtyler/jenkins',       '1.7.0'
-mod 'puppetlabs/java',      '1.6.0'
-mod 'puppet/archive',       '4.2.0'
-mod 'puppetlabs/firewall',  '2.0.0'
+mod 'puppetlabs/stdlib',         '5.2.0'
+mod 'puppetlabs/translate',      '2.0.0'
+mod 'puppetlabs/apt',            '7.1.0'
+mod "puppet/gitlab",             '4.0.1'
+mod 'puppetlabs/apache',         '5.0.0'
+mod 'puppetlabs/concat',         '6.1.0'
+mod 'rtyler/jenkins',            '1.7.0'
+mod 'puppetlabs/java',           '1.6.0'
+mod 'puppet/archive',            '4.2.0'
+mod 'puppetlabs/firewall',       '2.0.0'
+
+mod 'camptocamp/postfix',        '1.8.0'
+mod 'camptocamp/augeas',         '1.8.0' # postfix
+mod 'puppet/alternatives',       '2.1.0' # < 3.0.0 ; postfix
+mod 'puppetlabs/mailalias_core', '1.0.5' # postfix
 
 mod 'my_fw',
     git: 'git@github.com:01deEng1ish/my_fw.git'

@@ -12,4 +12,9 @@ class profile::centos {
     enabled => 0,
   }
 
+  package { 'deltarpm':
+    ensure  => installed,
+    require => Yumrepo['local'],
+  }
+
 }

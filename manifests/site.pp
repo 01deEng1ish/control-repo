@@ -43,6 +43,10 @@ node 'jenkins', 'jenkins.localdomain' {
   include role::jenkins::master
 }
 
+node 'jenkins1', 'jenkins2', 'jenkins3' {
+  include role::jenkins::slave
+}
+
 node default {
   # This is where you can declare classes for all nodes.
   # Example:

@@ -1,6 +1,6 @@
 class profile::centos {
   yumrepo { 'local':
-    ensure       => present,
+    ensure       => absent,
     baseurl      => 'http://mirror/centos/7',
     enabled      => 1,
     gpgcheck     => 0,
@@ -9,12 +9,7 @@ class profile::centos {
   }
 
   yumrepo { ['base', 'updates', 'extras']:
-    enabled => 0,
-  }
-
-  package { 'deltarpm':
-    ensure  => installed,
-    require => Yumrepo['local'],
+    enabled => 1,
   }
 
 }

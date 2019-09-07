@@ -5,14 +5,16 @@ class profile::jenkins::master {
     configure_firewall => true,
     executors          => 0,
     plugin_hash        => {
-      gitlab-plugin     => {},
-      git               => {},
-      git-client        => {},
-      scm-api           => {},
-      ssh-credentials   => {},
-      workflow-step-api => {},
-      workflow-scm-step => {},
-      matrix-project    => {},
+      gitlab-plugin                      => {},
+      git                                => {},
+      git-client                         => {},
+      scm-api                            => {},
+      ssh-credentials                    => {},
+      workflow-step-api                  => {},
+      workflow-scm-step                  => {},
+      matrix-project                     => { version => '1.14' },
+      apache-httpcomponents-client-4-api => {},
+      jsch                               => {},
     }
   }
 
@@ -27,7 +29,6 @@ class profile::jenkins::master {
 
 #     plugin_hash => {
 #       'display-url-api' => {},
-#       'apache-httpcomponents-client-4-api' => {},
 #       'bouncycastle-api' => {},
 #       'cloudbees-folder' => {},
 #       'command-launcher' => {},
@@ -39,7 +40,6 @@ class profile::jenkins::master {
 #       'jaxb' => {},
 #       'job-dsl' => {},
 #       'jdk-tool' => {},
-#       'jsch' => {},
 #       'junit' => {},
 #       'mailer' => {},
 #       'managed-scripts' => {},

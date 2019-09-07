@@ -12,9 +12,11 @@ class profile::jenkins::master {
       ssh-credentials                    => {},
       workflow-step-api                  => {},
       workflow-scm-step                  => {},
-      matrix-project                     => { version => '1.14' },
+      matrix-project                     => {},
       apache-httpcomponents-client-4-api => {},
       jsch                               => {},
+      workflow-job                       => {},
+      workflow-support                   => {},
     }
   }
 
@@ -59,6 +61,4 @@ class profile::jenkins::master {
 #       'workflow-api' => {},
 #       'workflow-basic-steps' => {},
 #       'workflow-durable-task-step' => {},
-#       'workflow-job' => {},
-#       'workflow-support' => {},
 #     },

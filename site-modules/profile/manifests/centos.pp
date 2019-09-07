@@ -12,4 +12,6 @@ class profile::centos {
     enabled => 1,
   }
 
+  package { 'unzip': ensure => installed }
+
 }

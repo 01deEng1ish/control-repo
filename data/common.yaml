@@ -2,7 +2,3 @@
 apt::purge:
   :sources.list: true
   :sources.list.d: true
-jenkins::slave:
-  masterurl: http://jenkins.oldenglish.net
-  ui_user: oldenglish
-  ui_pass: password

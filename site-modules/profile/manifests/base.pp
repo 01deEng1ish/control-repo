@@ -9,4 +9,6 @@ class profile::base {
     include profile::centos
   }
 
+  package { 'git': ensure => latest }
+
 }

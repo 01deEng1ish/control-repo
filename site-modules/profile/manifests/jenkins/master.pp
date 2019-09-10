@@ -43,12 +43,6 @@ class profile::jenkins::master(
 
   class { 'jenkins::master': version => '3.17' }
 
-  jenkins::user { 'oldenglish':
-    email      => 'kristopher.english@gmail.com',
-    password   => 'password',
-    full_name  => 'Kristopher English',
-  }
-
   firewall { '501 allow Jenkins inbound agent traffic':
     action => 'accept',
     state  => 'NEW',

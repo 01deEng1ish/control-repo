@@ -22,6 +22,7 @@ class profile::jenkins::master(
     plugin_hash        => {
       ace-editor                         => {},
       apache-httpcomponents-client-4-api => {},
+      authentication-tokens              => {},
       blueocean                          => {},
       blueocean-autofavorite             => {},
       blueocean-bitbucket-pipeline       => {},

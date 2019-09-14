@@ -64,6 +64,7 @@ class profile::jenkins::master(
       ssh-credentials                    => {},
       token-macro                        => {},
       variant                            => {},
+      workflow-cps                       => {},
       workflow-api                       => {},
       workflow-job                       => {},
       workflow-multibranch               => {},

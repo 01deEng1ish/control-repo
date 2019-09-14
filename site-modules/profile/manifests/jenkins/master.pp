@@ -47,6 +47,7 @@ class profile::jenkins::master(
       cloudbees-folder                   => {},
       credentials-binding                => {},
       display-url-api                    => { version => '2.3.2' },
+      docker-commons                     => {},
       docker-workflow                    => {},
       durable-task                       => {},
       favorite                           => {},

@@ -20,6 +20,7 @@ class profile::jenkins::master(
     cli                => true,
     slaveagentport     => $slave_agent_port,
     plugin_hash        => {
+      ace-editor                         => {},
       apache-httpcomponents-client-4-api => {},
       blueocean                          => {},
       blueocean-autofavorite             => {},
@@ -52,6 +53,7 @@ class profile::jenkins::master(
       jackson2-api                       => {},
       jenkins-design-language            => {},
       jira                               => {},
+      jquery-detached                    => {},
       jsch                               => {},
       junit                              => {},
       mailer                             => { version => '1.26' },

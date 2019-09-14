@@ -50,6 +50,7 @@ class profile::jenkins::master(
       favorite                           => {},
       git                                => {},
       git-client                         => { version => '2.8.5' },
+      git-server                         => {},
       github                             => {},
       github-api                         => {},
       github-branch-source               => {},

@@ -61,6 +61,7 @@ class profile::jenkins::master(
       matrix-project                     => {},
       pipeline-build-step                => {},
       pipeline-milestone-step            => {},
+      pubsub-light                       => {},
       scm-api                            => {},
       script-security                    => { version => '1.64' },
       ssh-credentials                    => {},
